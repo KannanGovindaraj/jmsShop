@@ -1,0 +1,135 @@
+<ng-container>
+  <mat-toolbar class="example-header" color="primary">
+    <img src="../assets/finallogo.png" alt="header-logo" width="100" />
+    <div class="profile-container">
+      <img src="../assets/person.jpg" alt="profile Logo" width="20" />
+      <span>Kannan G</span>
+    </div>
+  </mat-toolbar>
+
+  <mat-sidenav-container class="example-container">
+    <mat-sidenav #sidenav mode="side" opened="true" class="example-sidenav" [fixedInViewport]="options.value.fixed" [fixedTopGap]="options.value.top"
+      [fixedBottomGap]="options.value.bottom">
+      <mat-nav-list>
+        <a mat-list-item>Dashboard</a>
+      </mat-nav-list>
+      <mat-accordion>
+        <mat-expansion-panel class="expansionPanel">
+          <mat-expansion-panel-header>
+            Profile
+          </mat-expansion-panel-header>
+          <button mat-button class="menubtn">Welcome Letter</button>
+          <button mat-button class="menubtn">Update Profile</button>
+          <button mat-button class="menubtn">Add Post</button>
+          <button mat-button class="menubtn">Receipts</button>
+        </mat-expansion-panel>
+      </mat-accordion>
+      <mat-nav-list>
+        <a mat-list-item>Retail Shop</a>
+      </mat-nav-list>
+      <mat-nav-list>
+        <a mat-list-item>Advertisement</a>
+      </mat-nav-list>
+      <mat-nav-list>
+        <a mat-list-item>Top-Up</a>
+      </mat-nav-list>
+      <mat-accordion>
+        <mat-expansion-panel class="expansionPanel">
+          <mat-expansion-panel-header>
+            E-Wallet
+          </mat-expansion-panel-header>
+          <button mat-button class="menubtn">Recharges</button>
+          <button mat-button class="menubtn">Money Transfer</button>
+          <button mat-button class="menubtn">INternal Transfer</button>
+        </mat-expansion-panel>
+        <mat-expansion-panel class="expansionPanel">
+          <mat-expansion-panel-header>
+            Reports
+          </mat-expansion-panel-header>
+          <button mat-button class="menubtn">Level Report</button>
+          <button mat-button class="menubtn">Silver Board Level</button>
+          <button mat-button class="menubtn">ROI Details</button>
+          <button mat-button class="menubtn">Recharge Details</button>
+          <button mat-button class="menubtn">Transfer Details</button>
+          <button mat-button class="menubtn">Payment Details</button>
+          <button mat-button class="menubtn">New Year Events</button>
+        </mat-expansion-panel>
+      </mat-accordion>
+    </mat-sidenav>
+
+    <mat-sidenav-content [formGroup]="options">
+      <div class="mainContent">
+        <div fxLayout="row" fxLayout.xs="column" fxFlex="100" fxLayoutGap="15px">
+          <div fxFlex="100">
+            <mat-card class="example-card transferCard cardColor">
+              <mat-card-header>
+                <mat-card-title>Transfer Wallet</mat-card-title>
+              </mat-card-header>
+              <mat-card-content>
+                <div class="contents">
+                  <div class="contentText">
+                    <span class="iconLoader">
+                      <mat-icon class="rotating">account_balance_wallet</mat-icon>
+                    </span>
+                  </div>
+                  <div class="contentamt">
+                    <p>Rs: 500</p>
+                    <p>Dicount Only</p>
+                  </div>
+                </div>
+              </mat-card-content>
+            </mat-card>
+          </div>
+          <div fxFlex="100">
+            <mat-card class="example-card paymentCard cardColor">
+              <mat-card-header>
+                <mat-card-title>Payment Wallet</mat-card-title>
+              </mat-card-header>
+              <mat-card-content>
+                <div class="contents">
+                  <div class="contentText">
+                    <span class="iconLoader">
+                      <mat-icon class="rotating">payment</mat-icon>
+                    </span>
+                  </div>
+                  <div class="contentamt">
+                    <p>Rs: 500</p>
+                    <p>Dicount Only</p>
+                  </div>
+                </div>
+              </mat-card-content>
+            </mat-card>
+
+          </div>
+          <div fxFlex="100">
+
+            <mat-card class="example-card purchaseCard cardColor">
+              <mat-card-header>
+                <mat-card-title>Purchase Wallet</mat-card-title>
+              </mat-card-header>
+              <mat-card-content>
+                <div class="contents">
+                  <div class="contentText">
+                    <span class="iconLoader">
+                      <mat-icon class="rotating">access_time</mat-icon>
+                    </span>
+                  </div>
+                  <div class="contentamt">
+                    <p>Rs: 500</p>
+                    <p>Dicount Only</p>
+                  </div>
+                </div>
+              </mat-card-content>
+            </mat-card>
+          </div>
+        </div>
+      </div>
+
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</ng-container>
+
+
+<!-- Copyright 2017 Google Inc. All Rights Reserved.
+    Use of this source code is governed by an MIT-style license that
+    can be found in the LICENSE file at http://angular.io/license -->

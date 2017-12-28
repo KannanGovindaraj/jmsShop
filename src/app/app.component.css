@@ -1,0 +1,152 @@
+.example-container {
+    position: absolute;
+    top: 60px;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+  }
+  
+  .example-sidenav {
+    width: 150px;
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 3px 0 6px rgba(0,0,0,.24);
+  }
+  
+  .example-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12);
+  }
+  .mat-toolbar-single-row {
+    height: 40px;
+    }
+    .profile-container {
+        font-size: 12px;
+        width: 100%;
+        text-align: right;
+    }
+    .profile-container img {
+        position: relative;
+        top: 5px;
+    }
+    .mat-nav-list {
+        padding-top: 0px !important;
+    }
+    .mat-expansion-panel-spacing {
+        margin: 0px 0;
+    }
+    .mat-expansion-panel-header {
+        padding-left: 16px !important;
+        font-size: 14px;
+    }
+    .mat-nav-list .mat-list-item {
+        font-size: 14px !important;
+    }
+    .menubtn {
+        padding: 0px !important;
+        text-align: left;
+    }
+    .mat-expansion-panel-body {
+        padding: 0 5px 16px !important; 
+    }
+    mat-expansion-panel-header {
+        height: 48px !important;
+    }
+    .mat-expansion-panel:not([class*=mat-elevation-z]) {
+        box-shadow: none;
+    }
+    .mainContent {
+        margin: 0px 20px;
+        padding: 20px;
+        border: 1px solid #d0d6f7;
+        border-top: 4px solid #ccd2f3;
+        height: calc(100% - 60px);
+    }
+    .contentText {
+        text-align: center;
+        flex: 1;
+    }
+    .contents {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 100%;
+        vertical-align: middle;
+        align-items: center;
+        justify-content: center;
+    }
+    .iconLoader {
+        padding: 20px 15px;
+        display: inline-block;
+        fill: currentColor;
+        height: 24px;
+        width: 24px;
+        border-radius: 50%;
+    }
+    .cardColor {
+        color: white;
+    }
+    .paymentCard {
+        background: #7460ee;
+    }
+    .purchaseCard {
+        background: #26C6DA;
+    }
+    .transferCard {
+        background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #1e88e5), color-stop(1, #14d1ff))
+    }
+    .transferCard .iconLoader {
+        border: 1px solid #82def7;
+        background: #56b6d8;
+    }
+    .paymentCard .iconLoader {
+        border: 1px solid #bbb1f5;
+        background: #8879e6;
+    }
+    .purchaseCard .iconLoader {
+        border: 1px solid #a9eef7;
+        background: #5fb8c3;
+    }
+    .mat-card {
+        padding: 10px 10px;
+    }
+    .contentamt {
+        flex:1;
+    }
+    @-webkit-keyframes rotating /* Safari and Chrome */ {
+        from {
+          -webkit-transform: rotate(0deg);
+          -o-transform: rotate(0deg);
+          transform: rotate(0deg);
+        }
+        to {
+          -webkit-transform: rotate(360deg);
+          -o-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+      @keyframes rotating {
+        from {
+          -ms-transform: rotate(0deg);
+          -moz-transform: rotate(0deg);
+          -webkit-transform: rotate(0deg);
+          -o-transform: rotate(0deg);
+          transform: rotate(0deg);
+        }
+        to {
+          -ms-transform: rotate(360deg);
+          -moz-transform: rotate(360deg);
+          -webkit-transform: rotate(360deg);
+          -o-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+      .rotating {
+        -webkit-animation: rotating 2s linear infinite;
+        -moz-animation: rotating 2s linear infinite;
+        -ms-animation: rotating 2s linear infinite;
+        -o-animation: rotating 2s linear infinite;
+        animation: rotating 2s linear infinite;
+      }
